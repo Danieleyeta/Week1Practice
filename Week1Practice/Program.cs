@@ -7,7 +7,8 @@ class Program
     {
         Console.WriteLine("Choose a program to run:");
         Console.WriteLine("1. Calculator");
-        Console.WriteLine("2. Temperature Converter (Coming Soon)");
+        Console.WriteLine("2. Temperature Converter");
+        Console.WriteLine("3. Age Calculator");
 
         string choice = Console.ReadLine();
 
@@ -17,8 +18,14 @@ class Program
         }
         else if (choice == "2")
         {
-            // TempConverter.Run(); // <--- COMMENTED OUT UNTIL YOU CREATE THE FILE
-            Console.WriteLine("You haven't built this yet!");
+            tempconversion.Run();
+            
+        }else if (choice == "3")
+        {
+             AgeCalculator.Run();
         }
-    }
+        Console.WriteLine("\nPress Enter to close...");
+        Console.ReadLine();
+    
+}
 }
